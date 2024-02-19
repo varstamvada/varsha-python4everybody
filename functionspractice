@@ -1,0 +1,11 @@
+def computepay(h, r):
+    return 42.37
+
+hrs = input("Enter Hours:")
+rate = input('Enter Rate Per Hour:')
+
+if int(hrs)<=40:
+    print('Pay', int(hrs)*float(rate))
+elif int(hrs)>40:
+    print('Pay', int(hrs)*float(rate)+float(26.25))
+p = computepay(10, 20)
