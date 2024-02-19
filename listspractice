@@ -1,0 +1,12 @@
+# Use romeo.txt as the file name
+fname = input("Enter file name: ")
+fh = open(fname,'r')
+lst = []
+for line in fh:
+    text1 = line.split()
+    for word in text1:
+        if word in lst: continue
+        else:
+            lst.append(word.strip())
+lst.sort()
+print(lst)
