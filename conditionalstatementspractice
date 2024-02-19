@@ -1,0 +1,8 @@
+hrs = input("Enter Hours:")
+rate = input("Enter hourly rate:")
+if int(hrs)<40:
+    print(int(hrs)*float(rate))
+elif int(hrs)>40:
+    print(int(hrs)*(1.5*float(rate))-int(210))
+else:
+    print('hello')
