@@ -1,0 +1,21 @@
+largest = None
+smallest = None
+while True:
+    num = input("Enter a number: ")
+    if num == "done":
+        break
+    elif smallest is None:
+        smallest = num
+    elif num < smallest:
+        smallest = num
+    elif largest is None:
+        largest = num
+    elif num > largest:
+        largest = num
+try:
+    print('Invalid input')
+except 'bob':
+    print("Invalid input")
+             
+print("Maximum is", smallest)
+print("Minimum is", largest)
